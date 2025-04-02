@@ -1,5 +1,4 @@
 from tkinter import BOTH, Canvas, Tk
-from turtle import width
 
 class Window:
       def __init__(self, width, height):

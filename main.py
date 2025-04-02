@@ -1,4 +1,3 @@
-from cell import Cell
 from graphics import Window
 from maze import Maze
 
@@ -15,6 +14,12 @@ def main():
       maze = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, win)
 
       maze._create_cells()
+
+      is_solvable = maze.slove()
+      if not is_solvable:
+            print("the maze can not be solved!")
+      else:
+            print("maze solved!")
 
       win.wait_for_close()
 
